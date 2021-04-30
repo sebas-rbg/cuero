@@ -25,6 +25,8 @@ SECRET_KEY = 'django-insecure-357t*%7s)tm%02ak-#jo36nphltmr7nv)ia!w+dqdkdj+-kw%1
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
+#cuando quiera subir la pagina a un servidor
+
 ALLOWED_HOSTS = []
 
 
@@ -59,7 +61,7 @@ TEMPLATES = [
         'DIRS': [],
         'APP_DIRS': True,
         'OPTIONS': {
-            'context_processors': [
+            'context_processors':[
                 'django.template.context_processors.debug',
                 'django.template.context_processors.request',
                 'django.contrib.auth.context_processors.auth',
@@ -120,6 +122,8 @@ USE_TZ = True
 # https://docs.djangoproject.com/en/3.2/howto/static-files/
 
 STATIC_URL = '/static/'
+MEDIA_URL = '/media/'
+MEDIA_ROOT = BASE_DIR / 'media'
 
 # Default primary key field type
 # https://docs.djangoproject.com/en/3.2/ref/settings/#default-auto-field
